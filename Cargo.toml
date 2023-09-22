@@ -1,0 +1,15 @@
+[package]
+name = "RustGLWindow"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+failure = "0.1"
+gl = { path = "lib/gl" }
+sdl2 = { version = "0.35.2", features = ["bundled", "static-link"] }
+
+[build-dependencies]
+walkdir = "2.4"
+
+[features]
+gl_debug = ["gl/debug"]
